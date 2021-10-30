@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FCIT18</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+<p class="text">عدد الايام الباقية على اعتزال الملاعب </p>
+    <p id="p1"></p>
+    <iframe width="420" height="345" src="https://www.youtube.com/embed//2sK10pl7NNY">
+    </iframe>
+
+    <script>
+        var date = new Date('6/16/2022');
+            var date2 = new Date();
+            var difference = date.getTime() - date2.getTime();
+            var days = Math.ceil(difference / (1000 * 3600 * 24));
+var numOfDays='' + days;
+            
+        document.getElementById("p1").innerHTML =  numOfDays;
+    </script>
+
+
+
+</body>
+
+</html>
